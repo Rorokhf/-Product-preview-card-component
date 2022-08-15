@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+:root{
+    --Primary-Dark-cyan:hsl(158, 36%, 37%);
+    --primary-Cream:hsl(30, 38%, 92%);
+
+    --Neutral-Very-dark-blue:hsl(212, 21%, 14%);
+    --Neutral-Dark-grayish-blue:hsl(228, 12%, 48%);
+    --Neutral-white:hsl(0, 0%, 100%);
+}
+.cont p{
+    font-size: 14px;
+    
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+body{
+    background: var(--primary-Cream);
+    display: flex;
+    justify-content: center;
+    
+}
+section{
+    margin: 5%;
+    border: 1px transparent var(--Primary-Dark-cyan);
+    height: 500px;
+    width:60% ;
+    background-color: var(--Neutral-white);
+    border-radius:25px ;
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+    display: grid;
+    grid-template-columns:50% 50%;
+   
+ overflow: hidden;
+}
+.img-sector{
+ background-image: url(./images/image-product-desktop.jpg);
+ background-size: cover;
+ transition: .3s ease-in;
+ -webkit-transition: .3s ease-in;
+ -moz-transition: .3s ease-in;
+ -ms-transition: .3s ease-in;
+ -o-transition: .3s ease-in;
+}
+.img-sector:hover{
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    opacity: 1;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows:1fr 6% 10% 5% 20% 5% 10% 5% 10% 1fr;
+}
+h1{
+    grid-column-start: 2;
+    grid-row-start: 3;
+   
+}
+span{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    font-size: 14px;
+}
+.price{
+    grid-column-start: 2;
+    grid-row-start: 7;
+    display: inline-flex;
+    
+}
+.price p{
+    padding-right: 15px;
+    color: var(--Primary-Dark-cyan);
+    font-weight: 700;
+    font-size: 35px;
+}
+.price del{
+    align-self: center;
+}
+button{
+    grid-column-start: 2;
+    grid-row-start: 9;
+    background: var(--Primary-Dark-cyan);
+    color: var(--Neutral-white);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+button:hover{
+    transform: scale(1.2);
+}
+button .cart {
+    color: var(--Neutral-white) ;
+    margin-right: 5px;
+    align-self: center;
+}
+@media(max-width:912px) and (min-width:550px){
+    section {
+        margin: 5%;
+        border: 1px transparent var(--Primary-Dark-cyan);
+        height: 92vh;
+        width: 100%;
+        background-color: var(--Neutral-white);
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        display: grid;
+        grid-template-columns: 100%;
+        overflow: hidden;
+        grid-template-rows: 50% 50%;
+    }
+    .cont p,
+    .price p,
+    span,
+    .price del,
+    .price
+    {
+        font-size: 30px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    button{
+        font-size: 30px;
+    }
+}
+@media(width:768px){
+    .cont p,
+    .price p,
+    span,
+    .price del,
+    .price
+    {
+        font-size: 23px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:540px) {
+    section{
+        margin: 4%;
+        border: 1px transparent var(--Primary-Dark-cyan);
+        height: 637px;
+        width: 100%;
+        background-color: var(--Neutral-white);
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        display: grid;
+        grid-template-columns: 100%;
+        overflow: hidden;
+        grid-template-rows: 40% 60%;
+       
+     
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr 70% 1fr;
+        grid-template-rows:1fr 9% 19% 5% 20% 5% 10% 5% 10% 1fr;
+    }
+    .img-sector{
+        background-image: url(./images/image-product-mobile.jpg);
+    }
+    
+    
+}
